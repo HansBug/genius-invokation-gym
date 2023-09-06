@@ -55,7 +55,7 @@ def run_game(game, player1_agent_cls: Type[Agent], player2_agent_cls: Type[Agent
             artifact = active_player_info.characters[pos.value].artifact
         summons = active_player_info.summon_zone
 
-        logging.info(f"{active_player}")
+        logging.info(f"{active_player.name}")
         logging.info(f"    Current Dice: {dice}")
         if cards:
             logging.info(f"    Current Cards: {cards}")
